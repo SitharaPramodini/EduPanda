@@ -1,0 +1,47 @@
+version: '3'
+
+# List of services
+services:
+  admin-service: # Uadminser service configuration
+    image: adminservice:v1
+    ports:
+      - "5001:5001"
+
+  course-service: # course service configuration
+    image: courseservice:v1
+    ports:
+      - "5000:5000"
+
+  email-service: # email service configuration
+    image: emailservice:v1
+    ports:
+      - "9123:9123"
+
+  learner-service: # learner service configuration
+    image: learnerservice:v1
+    ports:
+      - "5050:5050"
+
+  # sms-service: # sms service configuration
+  #   build: /backend/sms-service
+  #   command: npm start
+  #   ports:
+  #     - "80:80"
+  #   restart: unless-stopped
+
+  user-service: # user service configuration
+    image: userservice:v1
+    ports:
+      - "5002:5002"
+
+  # Frontend service configuration  
+  frontend:
+    image: frontendservice:v1
+    ports:
+      - "3000:5173"
+    depends_on:
+      - admin-service
+      - course-service
+      - email-service
+      - learner-service
+      - user-service

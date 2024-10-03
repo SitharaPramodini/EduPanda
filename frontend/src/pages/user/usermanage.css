@@ -1,0 +1,181 @@
+
+/* login */
+div#root {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .w-8 {
+    width: 4rem;
+  }
+  .h-8 {
+    height: 4rem;
+  }
+  img.w-8.h-8.mr-2 {
+    margin-top: 20px;
+  }
+  button.w-full.text-white.bg-primary-600.hover\:bg-primary-700.focus\:ring-4.focus\:outline-none.focus\:ring-primary-300.font-medium.rounded-lg.text-sm.px-5.py-2\.5.text-center.dark\:bg-primary-600.dark\:hover\:bg-primary-700.dark\:focus\:ring-primary-800 {
+    background-color: #1c64f2;
+  }
+  .flex.flex-col.items-center.justify-center.px-6.py-8.mx-auto.md\:h-screen.lg\:py-0 {
+    margin-left: 0;
+  }
+  @media (prefers-color-scheme: dark) {
+        .dark\:text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity));
+            padding-top: 0px;
+        }
+    }
+  
+  /* profile */
+  .bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39);
+  }
+  .py-8 {
+    margin-left: 256px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 915px;
+    background-color: #111827;
+  }
+    .shadow {
+      --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0%), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+      --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      background-color: #1f2937;
+  }
+  .relative.bg-white.rounded-lg.overflow-hidden.max-w-md.p-6.mx-4 {
+    width: 1000px;
+    background-color: #1f2937;
+  }
+  textarea#bio {
+    height: 131px;
+  }
+  h2.updateprofile {
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+  }
+  .text-gray-700 {
+    --tw-text-opacity: 1;
+    color: rgb(170 171 173);
+  }
+  
+  /* landing page */
+  .splits {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 0px;
+  }
+  .lefts {
+    background-image: url('../public/left.jpg');
+    background-size: cover;
+    left: 0;
+  }
+  .rights {
+    right: 0;
+    background-color: #1f2937c7;
+    background-size: cover;
+    /* text-align: left; */
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+  .containers{
+    background-image: url('../public/home.jpg');
+    background-size: cover;
+    height: 1000px;
+    position: fixed;
+    width: 1000px;
+    top: 0;
+    overflow-x: hidden;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Change layout to stack vertically on small screens */
+    }
+  
+    .splits {
+      width: 100%; /* Each splits takes full width on small screens */
+      position: relative; /* Reset position for stacking */
+    }
+  
+    .rights {
+      background-image: none; /* Remove background image on small screens */
+    }
+  }
+  
+  
+  h2.land-head {
+    font-size: 35px;
+    width: 476px;
+    font-weight: 700;
+  }
+  img.land-logo {
+    width: 89px;
+    /* margin-left: auto;
+    margin-right: auto; */
+  }
+  h2.land-name {
+    font-size: 85px;
+    text-align: center;
+    font-weight: 800;
+    margin-top: -250px;
+    /* color: #111827; */
+  }
+  button.bg-blue-500.hover\:bg-blue-600.text-white.py-2.px-4.rounded {
+    margin-top: 16px;
+  }
+  a {
+    margin-right: 15px;
+  }
+  button.log:hover {
+    background-color: rgb(245, 244, 244);
+    color:#000000;
+  }
+  button.log {
+    background-color: white;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+  
+  /* forgot password */
+  .forgot {
+    background-color: #1f2937;
+    margin-top: 100px;
+    padding: 74px;
+    border-radius: 12px;
+  }
+  h1.forgot-h {
+    font-size: 27px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+  p.forgot-p {
+    padding-bottom: 30px;
+  }
+  .mx-auto {
+    /* margin-left: auto; */
+    margin-right: auto;
+  }
+  a.back-login {
+    color: #3f83f8;
+  }
+  a.back-login:hover {
+    color: #2966ce;
+  }
+  .max-w-sm {
+    margin-bottom: 21px;
+  }
+  
